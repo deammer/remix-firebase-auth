@@ -1,0 +1,9 @@
+node_modules
+
+/.cache
+/build
+/public/build
+
+# Ignore .env files except .env.sample
+.env*
+!.env.sample
