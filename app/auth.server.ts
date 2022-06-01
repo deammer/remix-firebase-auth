@@ -36,10 +36,6 @@ const sessionStorage =
   });
 
 export async function createUserSession(idToken: string, redirectTo = "/") {
-  await auth.createSessionCookie(idToken, {
-    expiresIn: COOKIE_EXPIRATION.milliseconds,
-  });
-
   const token = await auth.createSessionCookie(idToken, {
     expiresIn: COOKIE_EXPIRATION.milliseconds,
   });
